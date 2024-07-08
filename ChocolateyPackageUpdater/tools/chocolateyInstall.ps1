@@ -2,7 +2,7 @@
 $installDir = Join-Path $toolsDir 'chocopkgup' 
 $installDirBackup = $installDir.Replace("\lib\","\lib-bkp\")
 
-$binRoot = Get-BinRoot
+$binRoot = Get-ToolsLocation
 $oldInstallDir = Join-Path $binRoot 'ChocolateyPackageUpdater'
 $oldInstallDirBackup = Join-Path $binRoot 'ChocolateyPackageUpdater.backup'
 
